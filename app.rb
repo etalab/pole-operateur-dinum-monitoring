@@ -31,7 +31,7 @@ get '/' do
   { ping: 'PONG!' }.to_json
 end
 
-post '/' do
+post "/#{ENV['PEPPER']}" do
   create
 end
 
