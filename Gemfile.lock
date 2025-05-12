@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    json (2.12.0)
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.4)
@@ -16,14 +17,17 @@ GEM
       rack-protection (= 2.2.4)
       tilt (~> 2.0)
     tilt (2.6.0)
+    uri (1.0.3)
 
 PLATFORMS
   ruby
   x86_64-linux
 
 DEPENDENCIES
+  json
   puma
   sinatra (~> 2.0, >= 2.0.1)
+  uri
 
 RUBY VERSION
    ruby 3.4.3p32
