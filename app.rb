@@ -25,6 +25,11 @@ MONITORED_STATUS_CODES = [
   502
 ]
 
+get '/' do
+  content_type :json
+  status 200
+  { ping: 'PONG!' }.to_json
+end
 
 post '/' do
   create
