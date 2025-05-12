@@ -58,11 +58,7 @@ def notify_mattermost
 end
 
 def json_message_alert_down
-  { text: "@all Alert! #{service_name} is down. The following ping failed on Hyperping: #{hyperping_monitor_url}" }.to_json
-end
-
-def service_name
-  webhook_params['check']['name']
+  { text: "@all Alert! The monitor #{webhook_params['check']['url']} is down. Hyperping page: #{hyperping_monitor_url}" }.to_json
 end
 
 def mattermost_webhook_uri

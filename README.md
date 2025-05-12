@@ -19,6 +19,8 @@ The goal of the middleware is to send a message that will ping everyone (with @a
 - You can find the webhook URL in the [mattermost settings](https://mattermost.incubateur.net/betagouv/integrations/incoming_webhooks)
 - The app URL needs to be defined in the [Hyperping webhook settings](https://app.hyperping.io/integrations/int_jgnWRJXCbi1TOi)
 
+The mattermost webhook configures which channel to ping at creation.
+
 ## Testing in local
 
 `bundle install`
@@ -35,3 +37,8 @@ then:
 ```
 
 If you want to send a real message from local to Mattermost, run the server with `MATTERMOST_WEBHOOK_URL=<real-webhook-url> app.rb`
+
+## Docs
+
+[Doc webhook hyperping](https://hyperping.com/docs/integrations/webhooks)
+[Doc webhook mattermost](https://developers.mattermost.com/integrate/webhooks/incoming)
